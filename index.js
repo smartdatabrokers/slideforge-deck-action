@@ -70,7 +70,13 @@ async function main() {
   const n = body.slides.length;
   console.log(`Rendering ${n} slide${n === 1 ? "" : "s"} from ${deckPath} ...`);
 
-  const headers = { Authorization: `Bearer ${apiKey}`, "Content-Type": "application/json" };
+  // Identify the integration so renders from CI can be told apart from raw API calls.
+  // Attribution only — it grants nothing, and omitting it changes nothing.
+  const headers = {
+    Authorization: `Bearer ${apiKey}`,
+    "Content-Type": "application/json",
+    "X-SlideForge-Client": "slideforge-deck-action/1.0.0",
+  };
 
   let res, result;
   try {
