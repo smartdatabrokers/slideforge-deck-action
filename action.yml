@@ -1,0 +1,52 @@
+name: 'SlideForge Deck'
+description: 'Render an editable PowerPoint (.pptx) from a JSON file in CI — deterministic, your numbers bound verbatim.'
+author: 'Smart Data Brokers GmbH'
+
+branding:
+  icon: 'layers'
+  color: 'blue'
+
+inputs:
+  api-key:
+    description: 'SlideForge API key (sf_live_...). Store it as a repo secret. Free key — 60 free slides, no card: https://slideforge.dev/sign-up'
+    required: true
+  deck:
+    description: 'Path to a JSON file: either {"name": "...", "slides": [ ...intents... ]} or a bare array of slide intents.'
+    required: false
+    default: 'deck.json'
+  output:
+    description: 'Where to write the rendered .pptx.'
+    required: false
+    default: 'deck.pptx'
+  theme-id:
+    description: 'Optional theme id (built-in or an uploaded brand template).'
+    required: false
+  name:
+    description: 'Optional deck name (overrides "name" in the JSON file).'
+    required: false
+  fail-on-warnings:
+    description: 'Fail the step if the render returns non-blocking warnings (blocking errors always fail).'
+    required: false
+    default: 'false'
+  api-base:
+    description: 'API base URL. Only change this for testing.'
+    required: false
+    default: 'https://api.slideforge.dev'
+
+outputs:
+  job-id:
+    description: 'SlideForge job id for the rendered deck.'
+  pptx-path:
+    description: 'Path to the written .pptx file.'
+  status:
+    description: 'Render status (complete | completed_with_errors | rejected).'
+  fidelity:
+    description: 'verbatim | mixed | ai_completed — how your supplied content was bound.'
+  slides:
+    description: 'Number of slides rendered.'
+  cost:
+    description: 'USD charged for this render (0 when nothing usable was produced).'
+
+runs:
+  using: 'node20'
+  main: 'index.js'

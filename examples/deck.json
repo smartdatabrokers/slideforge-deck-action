@@ -1,0 +1,21 @@
+{
+  "name": "Weekly report",
+  "slides": [
+    {
+      "form": "kpi_metrics",
+      "headline": "Q3 at a glance",
+      "data": {
+        "metrics": [
+          { "label": "Revenue", "value": "$12.4M", "delta": "+18% YoY" },
+          { "label": "New clients", "value": "847" },
+          { "label": "NPS", "value": "62" }
+        ]
+      }
+    },
+    {
+      "form": "hero_statement",
+      "headline": "Rendered in CI",
+      "context": "This deck was built by a GitHub Action on every push."
+    }
+  ]
+}
