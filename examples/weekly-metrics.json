@@ -1,0 +1,20 @@
+{"name":"Weekly metrics — week 30","slides":[
+ {"form":"hero_statement","headline":"Weekly Metrics","context":"Week 30 · automatically rendered from the metrics warehouse","date":"2026-07-24"},
+ {"form":"kpi_metrics","headline":"Signups held, activation improved","context":"Week 30 vs week 29",
+  "data":{"metrics":[
+   {"label":"Signups","value":"1,284","delta":"+4.2%"},
+   {"label":"Activated","value":"612","delta":"+11.0%"},
+   {"label":"Paid conversion","value":"3.1%","delta":"+0.4pp"},
+   {"label":"Churn","value":"1.8%","delta":"-0.2pp"}]},
+  "takeaway":"Activation is carrying the funnel; signups are flat."},
+ {"form":"trend_chart","headline":"Weekly active teams keep compounding","context":"Weekly active teams",
+  "data":{"periods":["W24","W25","W26","W27","W28","W29","W30"],
+   "series":[{"label":"Active teams","values":[820,845,867,910,944,971,1024],"emphasis":"primary"}],
+   "target":{"value":1100,"label":"Q3 target 1,100"}},
+  "source_note":"Warehouse snapshot, Monday 06:00 UTC"},
+ {"form":"status_dashboard","headline":"Two workstreams need a decision this week","context":"Delivery workstreams",
+  "data":{"rows":[
+   {"item":"Billing migration","status":"green","progress":82,"owner":"Platform","due":"31 Jul","next_action":"Cut over remaining 12% of accounts"},
+   {"item":"SSO rollout","status":"amber","progress":54,"owner":"Identity","due":"07 Aug","next_action":"Unblock IdP metadata from vendor","emphasis":"primary"},
+   {"item":"Data retention","status":"red","progress":28,"owner":"Data","due":"29 Jul","next_action":"Approve deletion policy"}]}}
+]}

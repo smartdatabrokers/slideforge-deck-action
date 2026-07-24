@@ -1,0 +1,17 @@
+{"name":"Release v2.4.0","slides":[
+ {"form":"hero_statement","headline":"v2.4.0 is out","context":"Generated from CHANGELOG.md when the tag was pushed","date":"2026-07-24"},
+ {"form":"agenda_list","headline":"What shipped in 2.4.0","subject":"RELEASE",
+  "blocks":[
+   {"label":"Features","kind":"header"},
+   {"label":"Scheduled exports","meta":"#812","sub":"Send any saved view on a cron"},
+   {"label":"SSO for teams","meta":"#799","sub":"SAML + SCIM provisioning"},
+   {"label":"Fixes","kind":"header"},
+   {"label":"Timezone drift on digests","meta":"#834","sub":"Digests now respect the workspace timezone"},
+   {"label":"CSV export encoding","meta":"#828","sub":"UTF-8 BOM for Excel compatibility"}]},
+ {"form":"kpi_metrics","headline":"Release at a glance","context":"Since v2.3.0",
+  "data":{"metrics":[
+   {"label":"Merged PRs","value":"37"},
+   {"label":"Contributors","value":"9"},
+   {"label":"Days since last release","value":"14"},
+   {"label":"Open bugs closed","value":"12"}]}}
+]}

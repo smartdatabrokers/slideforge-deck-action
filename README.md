@@ -20,6 +20,19 @@ copy your key from [**console/keys**](https://slideforge.dev/console/keys) and s
 (`Settings → Secrets and variables → Actions`). A render that isn't usable
 [never bills](https://slideforge.dev/pricing).
 
+## Recipes
+
+Working patterns, each with the real rendered output — see [`recipes/`](recipes/README.md):
+
+| | |
+|---|---|
+| [**Weekly metrics report**](recipes/weekly-metrics-report.md) | The report someone rebuilds by hand every Monday |
+| [**Release deck**](recipes/release-deck.md) | "What shipped" for every tagged release, from your changelog |
+| [**Analytics / pipeline review**](recipes/analytics-review.md) | Warehouse numbers → an auditable stakeholder deck |
+| [**Deck quality gate**](recipes/deck-quality-gate.md) | Fail CI when a deck stops rendering faithfully |
+
+[![Weekly metrics deck](recipes/images/weekly-metrics.png)](recipes/weekly-metrics-report.md)
+
 ## The deck file
 
 Either an envelope or a bare array of slide intents:

@@ -1,0 +1,20 @@
+{"name":"Revenue review — Q3","slides":[
+ {"form":"kpi_metrics","headline":"Q3 closed ahead of plan on revenue, behind on expansion","context":"Quarter to date vs plan",
+  "data":{"metrics":[
+   {"label":"Net revenue","value":"$24.1M","delta":"+12% QoQ"},
+   {"label":"Expansion ARR","value":"$3.4M","delta":"-8% vs plan"},
+   {"label":"Gross margin","value":"71%","delta":"+1.5pp"}]},
+  "takeaway":"Revenue is ahead; expansion is the gap to close in Q4."},
+ {"form":"bar_rank_chart","headline":"Three segments carry most of the quarter","context":"Q3 net revenue by segment",
+  "data":{"unit":"","categories":[
+   {"label":"Enterprise","value":9.8,"display":"$9.8M","sublabel":"+18%","emphasis":"primary"},
+   {"label":"Mid-market","value":6.4,"display":"$6.4M","sublabel":"+9%"},
+   {"label":"Public sector","value":4.1,"display":"$4.1M","sublabel":"+21%"},
+   {"label":"SMB","value":2.6,"display":"$2.6M","sublabel":"-4%"},
+   {"label":"Partners","value":1.2,"display":"$1.2M","sublabel":"+2%"}]},
+  "source_note":"Warehouse: fct_revenue, nightly build"},
+ {"form":"trend_chart","headline":"Revenue re-accelerated after the Q2 dip","context":"Quarterly net revenue ($m)",
+  "data":{"periods":["Q1 FY25","Q2 FY25","Q3 FY25","Q4 FY25","Q1 FY26","Q2 FY26","Q3 FY26"],
+   "series":[{"label":"Net revenue","values":[17.2,18.0,17.4,19.6,20.8,21.5,24.1],"unit":"m","emphasis":"primary"}],
+   "target":{"value":26,"label":"FY26 plan $26m"}}}
+]}
